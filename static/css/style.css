@@ -18,6 +18,27 @@ header {
 	margin: 0px auto;
 }
 
+.side-grid {
+	padding: 0;
+	margin: 0;
+	width: calc(33.3333333%);
+}
+
+.mdl-card__supporting-text {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.mdl-card__supporting-text h3 {
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.mdl-card__supporting-text ul {
+	margin: 0px;
+}
+
 .mdl-layout__header-row {
 	height: 64px !important;
 }
@@ -61,6 +82,7 @@ main {
 	color: #000000;
 	padding: 8px;
 	margin-left: 15px;
+	margin-right: 15px;
 	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
