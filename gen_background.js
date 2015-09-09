@@ -22,4 +22,4 @@ if(!fs.existsSync('./www/background_archive')) {
 
 var date = new Date();
 
-fs.writeFileSync('./www/background_archive/background' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + '.svg', svgString);
+fs.writeFileSync('./www/background_archive/background_' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + '.svg', svgString);
