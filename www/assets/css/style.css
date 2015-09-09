@@ -1,5 +1,5 @@
 .demo-layout-transparent {
-	background: url('../../img/background.svg') center / cover;
+	background: url('../img/background.svg') center / cover;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
@@ -137,11 +137,11 @@ main {
 }
 
 .project-linkjvm.mdl-card {
-  	background: url('../../static/img/linkjvm.svg') center / cover;
+  	background: url('../img/linkjvm.svg') center / cover;
 }
 
 .project-timely.mdl-card {
-  	background: url('../../static/img/timely.png') center / cover;
+  	background: url('../img/timely.png') center / cover;
 }
 
 .project-card .mdl-card__actions {
