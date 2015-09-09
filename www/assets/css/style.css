@@ -170,6 +170,10 @@ footer {
 	margin-top: 50px !important;
 }
 
+.mdl-mini-footer {
+	background-color: #263238 !important;
+}
+
 .img-footer {
 	padding-bottom: 0px;
 }
