@@ -14,12 +14,12 @@ var svg = trianglify({
 
 var svgString = xmlserializer.serializeToString(svg);
 
-fs.writeFileSync('./www/assets/img/background.svg', svgString);
+fs.writeFileSync(__dirname + '/www/assets/img/background.svg', svgString);
 
-if(!fs.existsSync('./www/background_archive')) {
-	fs.mkdirSync('./www/background_archive');
+if(!fs.existsSync(__dirname + '/www/background_archive')) {
+	fs.mkdirSync(__dirname + '/www/background_archive');
 }
 
 var date = new Date();
 
-fs.writeFileSync('./www/background_archive/background_' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + '.svg', svgString);
+fs.writeFileSync(__dirname + '/www/background_archive/background_' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + '.svg', svgString);
