@@ -5,7 +5,7 @@ var trianglify    = require('trianglify'),
 var svg = trianglify({
 	width: 1600,
 	height: 900,
-	cell_size: 50,
+	cell_size: Math.random() * 100 + 30,
 	variance: 1,
 	seed: new Date().getTime(),
 	x_colors: 'random',
@@ -14,4 +14,12 @@ var svg = trianglify({
 
 var svgString = xmlserializer.serializeToString(svg);
 
-fs.writeFileSync('../img/background.svg', svgString);
+fs.writeFileSync('./www/assets/img/background.svg', svgString);
+
+if(!fs.existsSync('./www/background_archive')) {
+	fs.mkdirSync('./www/background_archive');
+}
+
+var date = new Date();
+
+fs.writeFileSync('./www/background_archive/background' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + '.svg', svgString);
