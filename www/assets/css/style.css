@@ -136,6 +136,12 @@ main {
 	min-height: 284px;
 }
 
+.projects-title {
+	font-size: 35px;
+	font-weight: 500;
+	color: #FAFAFA;
+}
+
 .project-linkjvm.mdl-card {
   	background: url('../img/linkjvm.svg') center / cover;
 }
