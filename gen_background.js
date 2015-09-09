@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var trianglify    = require('trianglify'),
 	fs            = require('fs'),
 	xmlserializer = require('xmlserializer');
