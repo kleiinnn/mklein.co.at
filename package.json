@@ -1,0 +1,23 @@
+{
+  "name": "mklein.co.at",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gen_background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleiinnn/mklein.co.at.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kleiinnn/mklein.co.at/issues"
+  },
+  "homepage": "https://github.com/kleiinnn/mklein.co.at#readme",
+  "dependencies": {
+    "trianglify": "^0.3.1",
+    "xmlserializer": "^0.3.3"
+  }
+}
