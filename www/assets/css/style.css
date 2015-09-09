@@ -1,0 +1,179 @@
+.demo-layout-transparent {
+	background: url('../../img/background.svg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  	/* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  	color: #FFFFFF;
+}
+
+header {
+	background: rgba(0, 0, 0, 0.6) !important;
+	height: 100px !important;
+}
+
+.content {
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+.side-grid {
+	padding: 0;
+	margin: 0;
+	width: calc(33.3333333%);
+}
+
+.mdl-card__supporting-text {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.mdl-card__supporting-text h3 {
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.mdl-card__supporting-text ul {
+	margin: 0px;
+}
+
+.mdl-layout__header-row {
+	height: 64px !important;
+}
+
+.page-title {
+	font-size: 45px;
+	font-weight: 500;
+	color: #FAFAFA;
+}
+
+.title-cell {
+	background: #263238; /*rgba(0, 0, 0, 0.5);*/
+	margin-bottom: 50px;
+}
+
+.title-cell > .mdl-card__title {
+	padding: 24px;
+}
+
+.title-cell > .mdl-card__title > .blog-link {
+	color: #FAFAFA;
+	text-align: right;
+	align-items: baseline;
+}
+
+.blog-link {
+	font-size: 14px;
+	margin-left: 20px;
+	align-self: flex-end;
+}
+
+.blog-link > a > button {
+	text-transform: none;
+}
+
+main {
+	padding-top: 200px;
+}
+
+.social {
+	text-decoration: none;
+}
+
+.social > div {
+	background: transparent;
+	font-size: 16px;
+	text-transform: none;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #000000;
+	padding: 8px;
+	margin-left: 15px;
+	margin-right: 15px;
+	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social > div:hover {
+	background-color: rgba(158,158,158, 0.20);
+}
+
+.social > div:active {
+  	background-color: rgba(158,158,158, 0.40);
+}
+
+.social > div img {
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.social > div div {
+	flex-direction: column;
+	display: flex;
+	margin-left: 30px;
+}
+
+.contact-card > .mdl-card__supporting-text > span {
+	font-size: 16px;
+}
+
+.contact-card > .mdl-card__supporting-text > a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.contact-card > .mdl-card__supporting-text > a > button {
+	margin-top: 20px;
+	text-transform: none;
+}
+
+.projects-card {
+	background: #263238; /*rgba(0, 0, 0, 0.5);*/
+	min-height: 284px;
+}
+
+.project-linkjvm.mdl-card {
+  	background: url('../../static/img/linkjvm.svg') center / cover;
+}
+
+.project-timely.mdl-card {
+  	background: url('../../static/img/timely.png') center / cover;
+}
+
+.project-card .mdl-card__actions {
+  	height: 52px;
+  	padding: 16px;
+  	background: rgba(0, 0, 0, 0.4);
+}
+
+.project-card .mdl-card__actions a:hover {
+	text-decoration: underline;
+}
+
+.project-card .mdl-card__actions a {
+	text-decoration: none;
+}
+
+.project-card-text {
+	color: #fff;
+  	font-size: 14px;
+  	font-weight: 500;
+}
+
+footer {
+	background-color: #263238 !important;
+	margin-bottom: 200px !important;
+	margin-top: 50px !important;
+}
+
+.img-footer {
+	padding-bottom: 0px;
+}
+
+.img-footer .hacker {
+	padding-top: 10px;
+}
