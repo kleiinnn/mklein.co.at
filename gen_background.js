@@ -2,7 +2,8 @@
 
 var trianglify    = require('trianglify'),
 	fs            = require('fs'),
-	xmlserializer = require('xmlserializer');
+	xmlserializer = require('xmlserializer'),
+	path          = require('path');
 
 var svg = trianglify({
 	width: 1600,
@@ -16,12 +17,9 @@ var svg = trianglify({
 
 var svgString = xmlserializer.serializeToString(svg);
 
-fs.writeFileSync(__dirname + '/www/assets/img/background.svg', svgString);
+fs.writeFileSync(path.join(process.argv[2], 'background.svg'), svgString);
 
-if(!fs.existsSync(__dirname + '/www/background_archive')) {
-	fs.mkdirSync(__dirname + '/www/background_archive');
+if(process.argv[3]) {
+    var date = new Date();
+	fs.writeFileSync(path.join(process.argv[3], 'background_' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + '.svg'), svgString);
 }
-
-var date = new Date();
-
-fs.writeFileSync(__dirname + '/www/background_archive/background_' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + '.svg', svgString);
