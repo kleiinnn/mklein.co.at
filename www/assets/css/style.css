@@ -1,5 +1,5 @@
 .demo-layout-transparent {
-	background: url('../img/background.svg') center / cover;
+	background: #00bcd4;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
@@ -142,12 +142,20 @@ main {
 	color: #FAFAFA;
 }
 
+.project-hedgehog.mdl-card {
+  	background: url('../img/hedgehog.svg') center / cover;
+}
+
 .project-linkjvm.mdl-card {
   	background: url('../img/linkjvm.svg') center / cover;
 }
 
 .project-timely.mdl-card {
   	background: url('../img/timely.png') center / cover;
+}
+
+.project-card {
+    min-height: 284px;
 }
 
 .project-card .mdl-card__actions {
