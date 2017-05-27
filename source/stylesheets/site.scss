@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+@import 'theme';
 @import 'settings';
 @import 'foundation';
 
@@ -45,3 +46,25 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+
+.top-bar {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+
+    .page-title {
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        strong {
+            color: $main-color;
+            font-weight: 700;
+        }
+    }
+
+    .menu > li > a {
+        padding: 0.9rem 1rem;
+    }
+}
