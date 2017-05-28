@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Khula');
+
 @import 'theme';
 @import 'settings';
 @import 'foundation';
@@ -47,8 +50,9 @@
 @include foundation-float-classes;
 // @include foundation-flex-classes;
 
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
-
+body{
+    font-size:20px;
+}
 
 .top-bar {
     font-family: 'Space Mono', monospace;
@@ -66,5 +70,35 @@
 
     .menu > li > a {
         padding: 0.9rem 1rem;
+    }
+}
+
+#main {
+    margin: 50px
+}
+
+hr {
+    background: #000;
+}
+
+.title {
+    //margin-top: 40px;
+    /*margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: $main-color;
+    color: #fff;*/
+
+    h1 {
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        //padding: 10px;
+    }
+}
+
+.blog-summary {
+    margin-bottom: 10px;
+    h3 {
+        margin-bottom: 0;
     }
 }
