@@ -102,3 +102,23 @@ hr {
         margin-bottom: 0;
     }
 }
+
+.blog-title {
+    margin-bottom: 50px;
+
+    * {
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .date {
+        color: $dark-gray;
+        @media screen and (min-width: 40em) {
+            font-size: 1.5rem;
+        }
+    }
+}
