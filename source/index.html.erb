@@ -1,32 +1,62 @@
-<div class="title">
-    <h1>About</h1>
-</div>
+<section class="main-section">
+    <h1 class="monospace">About</h1>
+    Hey there!
+</section>
 
-Hey there!
+<section class="main-section">
+    <h1 class="monospace">Projects</h1>
+    <section class="project">
+        <h4>Hedgehog</h4>
+        <p>Educational Robotics Controller</p>
+        <a href="https://hedgehog.pria.at/">https://hedgehog.pria.at</a>
+        <div>
+            <span class="label secondary">Robotics</span>
+            <span class="label secondary">Web</span>
+            <span class="label secondary">TypeScript</span>
+            <span class="label secondary">Angular</span>
+            <span class="label secondary">NodeJS</span>
+        </div>
+    </section>
+    <section class="project">
+        <h4>Der Naschmarkt</h4>
+        <p>File Sharing Platform</p>
+        <a href="https://github.com/TeachForAustria/Naschmarkt">https://github.com/TeachForAustria/Naschmarkt</a>
+        <div>
+            <span class="label secondary">File-Sharing</span>
+            <span class="label secondary">Web</span>
+            <span class="label secondary">PHP</span>
+            <span class="label secondary">Laravel</span>
+        </div>
+    </section>
+    <section class="project">
+        <h4>LinkJVM</h4>
+        <p>Java for the KIPR Link</p>
+        <a href="https://github.com/LinkJVM/LinkJVM">https://github.com/LinkJVM/LinkJVM</a>
+        <div>
+            <span class="label secondary">Robotics</span>
+            <span class="label secondary">Java</span>
+            <span class="label secondary">C/C++</span>
+        </div>
+    </section>
+</section>
 
-<hr/>
-<div class="title">
-    <h1>Projects</h1>
-</div>
+<section class="main-section">
+    <h1 class="monospace">Recent blog posts</h1>
+    <% page_articles.take(3).each_with_index do |article, i| %>
+        <div class="blog-summary">
+            <h4><%= link_to article.title, article %> <small><%= article.date.strftime('%e %b %Y') %></small></h4>
+            <!-- use article.summary(250) if you have Nokogiri available to show just the first 250 characters -->
+            <%= article.summary(250).gsub(/<\/?[^>]*>/, "") %>
+        </div>
+    <% end %>
+    <% if page_articles.count > 3 %>
+    <%= link_to 'More posts', '/blog' %>
+    <% end %>
+</section>
 
-Awesome projects!
-
-<hr/>
-<div class="title">
-    <h1>Recent blog posts</h1>
-</div>
-
-<% page_articles.take(5).each_with_index do |article, i| %>
-    <div class="blog-summary">
-        <h3><%= link_to article.title, article %> - <span><%= article.date.strftime('%e %b %Y') %></span></h3>
-        <!-- use article.summary(250) if you have Nokogiri available to show just the first 250 characters -->
-        <%= article.summary(250).gsub(/<\/?[^>]*>/, "") %>
-    </div>
-<% end %>
-
-<hr/>
-<div class="title">
-    <h1>Contact</h1>
-</div>
-
-Daten vong Kontakt her
+<section class="main-section">
+    <h1 class="monospace">Contact</h1>
+    <p>GitHub: <%= link_to '@trestoa', 'https://github.com/trestoa', :class => 'monospace' %></p>
+    <p>Twitter: <%= link_to '@trestoa', 'https://twitter.com/trestoa', :class => 'monospace' %></p>
+    <p>Email: <%= link_to 'm[et]mklein.co.at', 'mailt:m[et]mklein.co.at', :class => 'monospace' %></p>
+</section>
