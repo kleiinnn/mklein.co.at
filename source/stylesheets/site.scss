@@ -67,6 +67,10 @@ body{
             color: $main-color;
             font-weight: 700;
         }
+
+        a {
+            color: #000;
+        }
     }
 
     .menu > li > a {
@@ -76,8 +80,15 @@ body{
 
 footer {
     @extend .monospace;
-    @media screen and (min-width: 40em) {
-        padding: 50px 70px;
+
+    .wrapper {
+        @media screen and (max-width: 39.9375em) {
+            margin: .625rem;
+        }
+
+        @media screen and (min-width: 40em) {
+            margin: 50px 70px;
+        }
     }
 
     * {
@@ -86,6 +97,20 @@ footer {
 
     a {
         color: #000;
+    }
+
+    .left {
+        @media screen and (min-width: 40em) {
+            float: left;
+        }
+    }
+
+    .right {
+        @media screen and (min-width: 40em) {
+            float: right;
+            text-align: right;
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -102,6 +127,12 @@ footer {
 .monospace {
     font-family: 'Space Mono', monospace;
     font-weight: 400;
+}
+
+.logo-img {
+    width: $paragraph-lineheight + em;
+    vertical-align: middle;
+    margin-right: 7px;
 }
 
 .project {
