@@ -1,6 +1,7 @@
 <section class="main-section">
     <h1 class="monospace">About</h1>
-    Hey there!
+    Hey there! <br/>
+    This is the web page of Markus Klein. I am a 19 year old coder/developer and currently student at a technical highschool currently living near Vienna, Austria.
 </section>
 
 <section class="main-section">
@@ -38,6 +39,7 @@
             <span class="label secondary">C/C++</span>
         </div>
     </section>
+    <p>Visit my <a href="https://github.com/trestoa/">Github account</a> for many more open source projects of mine.</p>
 </section>
 
 <section class="main-section">
@@ -50,8 +52,12 @@
         </div>
     <% end %>
     <% if page_articles.count > 3 %>
-    <%= link_to 'More posts', '/blog' %>
+        <%= link_to 'More posts', '/blog' %>
     <% end %>
+    <% if page_articles.count == 0 %>
+        Nothing here yet ¯\_(ツ)_/¯
+    <% end %>
+
 </section>
 
 <section class="main-section">

@@ -16,6 +16,9 @@ per_page: 5
             <%= article.summary(250).gsub(/<\/?[^>]*>/, "") %>
         </div>
     <% end %>
+    <% if page_articles.count == 0 %>
+        Nothing here yet ¯\_(ツ)_/¯
+    <% end %>
 </div>
 
 <% if paginate && num_pages > 1 %>
