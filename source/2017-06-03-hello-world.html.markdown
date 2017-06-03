@@ -5,7 +5,7 @@ date: 2017-06-03 20:18 UTC
 tags:
 ---
 
-I think this is now my attempt to start a blog and I really hope that I will manage to write posts at least a few times a year.
+I think this is now my third attempt to start a blog and I really hope that I will manage to write posts at least a few times a year.
 Chances are good as I am just graduating from my current school (a technical high school) and I have a little bit more time now.
 
 Along with the effort to finally start my blog, I have also completely rewritten my website.
