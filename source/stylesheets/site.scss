@@ -71,10 +71,18 @@ body{
         a {
             color: #000;
         }
+
+        @media screen and (max-width: 39.9375em) {
+            padding: 0;
+        }
     }
 
     .menu > li > a {
         padding: 0.9rem 1rem;
+
+        @media screen and (max-width: 39.9375em) {
+            padding: .625rem;
+        }
     }
 }
 
