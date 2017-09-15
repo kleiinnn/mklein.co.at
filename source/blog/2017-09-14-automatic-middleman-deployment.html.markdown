@@ -1,8 +1,8 @@
 ---
 
 title: Automatic Deployment of Middleman Applications
-date: 2017-09-14 10:53 UTC
-tags:
+date: 2017-09-15 10:39 UTC
+tags: deployment static-site-generator web-development ruby
 
 ---
 
