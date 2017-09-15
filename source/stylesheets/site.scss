@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+// Syntax highlighting
 @import url('https://fonts.googleapis.com/css?family=Khula:400,700|Alegreya|Space+Mono:400,700');
 
 @import 'theme';
@@ -197,11 +198,11 @@ footer {
 }
 
 .blog-content {
-    * {
-        font-family: 'Alegreya', serif;
-    }
+    //font-family: 'Alegreya', serif;
+    margin-bottom: 100px;
 
     h1, h2, h3, h4, h5, h6 {
+        margin-top: 1em;
         font-weight: 700;
         font-family: 'Khula', sans-serif;
     }
@@ -210,4 +211,21 @@ footer {
 .blog-post-list {
     margin-top: 70px;
     margin-bottom: 70px;
+}
+
+code {
+  font-size: 11pt;
+}
+
+.highlight {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    code {
+        display: block;
+        margin: 15px 10px;
+        font-size: 11pt;
+        line-height: 1.15;
+        color: inherit;
+    }
 }

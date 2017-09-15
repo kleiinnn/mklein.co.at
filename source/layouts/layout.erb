@@ -8,6 +8,7 @@
         <title>Markus Klein <%= ' - ' + current_article.title unless current_article.nil? %></title>
         <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
         <%= stylesheet_link_tag "site" %>
+        <%= stylesheet_link_tag "highlighting" %>
     </head>
     <body>
         <div class="top-bar monospace">

@@ -71,3 +71,7 @@ activate :external_pipeline,
   name: :gulp,
   command: "./node_modules/gulp/bin/gulp.js sass",
   source: ".tmp/build"
+
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
